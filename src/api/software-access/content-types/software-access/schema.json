@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "software_accesses",
+  "info": {
+    "singularName": "software-access",
+    "pluralName": "software-accesses",
+    "displayName": "SoftwareAccess",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "software": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::software.software",
+      "mappedBy": "accesses"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::software-platform.software-platform",
+      "inversedBy": "accesses"
+    }
+  }
+}

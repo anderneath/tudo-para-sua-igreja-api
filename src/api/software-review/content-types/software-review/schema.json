@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "software_reviews",
+  "info": {
+    "singularName": "software-review",
+    "pluralName": "software-reviews",
+    "displayName": "SoftwareReview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "rating": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 0
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "Tudo Para Sua Igreja",
+        "Google Play",
+        "App Store"
+      ],
+      "required": true,
+      "default": "Tudo Para Sua Igreja"
+    },
+    "software": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::software.software",
+      "inversedBy": "reviews"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reviews"
+    }
+  }
+}

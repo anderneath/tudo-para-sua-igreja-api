@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_page_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "headphone"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

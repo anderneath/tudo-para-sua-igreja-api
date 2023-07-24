@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "used_software_periods",
+  "info": {
+    "singularName": "used-software-period",
+    "pluralName": "used-software-periods",
+    "displayName": "UsedSoftwarePeriod"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "software": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::used-software.used-software",
+      "inversedBy": "periods"
+    }
+  }
+}

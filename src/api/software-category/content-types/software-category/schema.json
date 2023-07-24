@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "software_categories",
+  "info": {
+    "singularName": "software-category",
+    "pluralName": "software-categories",
+    "displayName": "SoftwareCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "softwares": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::software.software",
+      "inversedBy": "categories"
+    }
+  }
+}
