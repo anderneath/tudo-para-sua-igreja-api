@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_fields",
+  "info": {
+    "displayName": "Field",
+    "icon": "paperPlane",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "search",
+        "text",
+        "email",
+        "password"
+      ],
+      "required": true
+    }
+  }
+}

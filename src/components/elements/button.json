@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_elements_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "cursor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": false
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "search"
+      ],
+      "required": false
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "search",
+        "submit"
+      ],
+      "required": true,
+      "default": "submit"
+    }
+  }
+}

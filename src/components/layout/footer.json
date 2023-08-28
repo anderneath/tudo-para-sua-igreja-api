@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "footerLogo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.logo"
+    },
+    "menuLinks": {
+      "displayName": "Link",
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    },
+    "socialLinks": {
+      "displayName": "Social Link",
+      "type": "component",
+      "repeatable": true,
+      "component": "links.social-link"
+    },
+    "popularCategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::software-category.software-category"
+    },
+    "legalLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    },
+    "rights": {
+      "type": "string",
+      "default": "© 2023 Todos os direitos reservados",
+      "required": true
+    },
+    "popularCategoriesTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "collectionName": "components_page_headers",
+  "collectionName": "components_layout_logos",
   "info": {
-    "displayName": "Header",
-    "icon": "headphone"
+    "displayName": "Logo",
+    "icon": "magic"
   },
   "options": {},
   "attributes": {
-    "Icon": {
+    "logoImg": {
       "allowedTypes": [
         "images"
       ],
@@ -14,9 +14,8 @@
       "multiple": false,
       "required": true
     },
-    "Name": {
-      "type": "string",
-      "required": true
+    "logoText": {
+      "type": "string"
     }
   }
 }

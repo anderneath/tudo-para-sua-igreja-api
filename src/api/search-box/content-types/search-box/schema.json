@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "search_boxes",
+  "info": {
+    "singularName": "search-box",
+    "pluralName": "search-boxes",
+    "displayName": "Search Box",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "field": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "elements.field",
+      "required": true
+    },
+    "button": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "elements.button",
+      "required": true
+    }
+  }
+}
