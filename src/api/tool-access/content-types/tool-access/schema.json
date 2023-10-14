@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tool_accesses",
+  "info": {
+    "singularName": "tool-access",
+    "pluralName": "tool-accesses",
+    "displayName": "ToolAccess",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tool": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tool.tool",
+      "mappedBy": "accesses"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tool-platform.tool-platform",
+      "inversedBy": "accesses"
+    }
+  }
+}

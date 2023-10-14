@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "saved_reviews",
+  "collectionName": "saved_tools",
   "info": {
-    "singularName": "saved-review",
-    "pluralName": "saved-reviews",
-    "displayName": "SavedReview"
+    "singularName": "saved-tool",
+    "pluralName": "saved-tools",
+    "displayName": "SavedTool",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,12 +16,15 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "saved_reviews"
+      "inversedBy": "saved_tools"
     },
-    "review": {
+    "tool": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::tool-review.tool-review"
+      "target": "api::tool.tool"
+    },
+    "note": {
+      "type": "richtext"
     }
   }
 }

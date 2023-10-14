@@ -69,13 +69,13 @@
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::software-review.software-review",
+      "target": "api::tool-review.tool-review",
       "mappedBy": "user"
     },
-    "saved_softwares": {
+    "saved_tools": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::saved-software.saved-software",
+      "target": "api::saved-tool.saved-tool",
       "mappedBy": "user"
     },
     "saved_reviews": {

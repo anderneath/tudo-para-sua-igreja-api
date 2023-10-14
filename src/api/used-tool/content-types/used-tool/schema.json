@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "used_tools",
+  "info": {
+    "singularName": "used-tool",
+    "pluralName": "used-tools",
+    "displayName": "UsedTool",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "influenced": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "periods": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::used-tool-period.used-tool-period",
+      "mappedBy": "tool"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "used_tool_periods",
+  "info": {
+    "singularName": "used-tool-period",
+    "pluralName": "used-tool-periods",
+    "displayName": "UsedToolPeriod"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "tool": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::used-tool.used-tool",
+      "inversedBy": "periods"
+    }
+  }
+}

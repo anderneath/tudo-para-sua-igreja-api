@@ -27,7 +27,7 @@
     "popularCategories": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::software-category.software-category"
+      "target": "api::tool-category.tool-category"
     },
     "legalLinks": {
       "type": "component",
